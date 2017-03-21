@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-launch-social-apps" version="0.0.1">
+	<name>launch-social-apps</name>
+	
+	<js-module name="launch-social-apps" src="www/launch-social-apps.js">
+		<clobbers target="cordova.plugins.launch-social-apps" />
+	</js-module>
+
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="SocialAppsLauncher">
+				<param name="android-package" value="com.mobileaccord.geopoll.plugins.SocialAppsLauncher" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/SocialAppsLauncher.java" target-dir="src/com/mobileaccord/geopoll/plugins" />
+	</platform>
+
+</plugin>
