@@ -4,7 +4,7 @@ Cordova plugin to launch links to social apps like facebook or twitter
 # Installation 
 
 ```bash
-  cordova install https://github.com/MobileAccord/cordova-launch-social-apps.git --save
+  cordova plugin add https://github.com/MobileAccord/cordova-launch-social-apps.git --save
 ```
 
 # Usage
